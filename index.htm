@@ -1,86 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blackcoin More">
     <title>Blackcoin More</title>
-    <link rel="stylesheet" type="text/css" href="./css/default.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="./images/favicon-bw.png">
-  </head>
-  <body>
-    <div id="header">
-      <div id="logo"> <a href="#">Blackcoin More</a> </div>
-      <!--<div id="navigation">
-            <a href="#l">1</a>            <a href="#">2</a>
-            <a href="#">3</a>            <a href="#">4</a>
-            <a href="#">5</a>        </div>--> </div>
-    <div id="content"> <img src="./images/logo-bw.png" alt="logo" class="logo">
-      <h2>What is Blackcoin?</h2>
-      <p>Blackcoin is a decentralised digital currency with near-instant
-        transaction speeds and negligible transaction fees built upon <em>Proof
-          of Stake 3.0</em> (<em>PoSV3</em>, <em>BPoS</em>) as introduced by
-        the Blackcoin development team.</p>
-      <h2>What is Blackcoin More?</h2>
-      <p>Blackcoin More is the name of open source software which enables the
-        use of this currency. It takes Blackcoin to the next level by building
-        upon Bitcoin Core 0.13.2 with some patches from newer Bitcoin Core
-        versions to offer performance enhancements, wider compatibility with
-        third party services and a more advanced base.</p>
+    <meta name="theme-color" content="#7952b3">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./css/cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-white bg-dark">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start">Blackcoin More</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="./download.htm">Download</a>
+                <a class="nav-link" href="./faq.htm">FAQ</a>
+                <a class="nav-link" href="./resources.htm">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h2>What is Blackcoin?</h2>
+                <p>Blackcoin is a decentralised digital currency with near-instant
+                    transaction speeds and negligible transaction fees built upon <em>Proof
+                        of Stake 3.0</em> (<em>PoSV3</em>, <em>BPoS</em>) as introduced by
+                    the Blackcoin development team.</p>
+            </div>
+            <div class="col-3">
+                <img src="./images/logo-bw-sm.png" class="img-fluid rounded float-end" alt="Blackcoin logo"/>
+            </div>
+        </div>
+        <div class="row">
+            <h2>What is Blackcoin More?</h2>
+            <p> Blackcoin More is a wallet for the Blackcoin currency enabling anyone to send and receive Blackcoin.
+                Additionally, when running the wallet with staking enabled, you will receive new Blackcoins
+                thanks to the original PoSV3 protocol.
+            <p>
+            <p> As built on Bitcoin Core 0.13.2, a proven solid and secure base, it offers performance enhancements
+                and wider compatibility with third party services than the original Blackcoin wallet. Blackcoin More
+                has the full support of the Blackcoin community and is maintained on a regular basis.
+            </p>
+        </div>
     </div>
-    <div id="links">
-      <h2>Download <small>(v2.13.2.7-4e1e6e83f @ 2020-11-24)</small></h2>
-      <ul>
-        <li><a href="./files/blackcoin-more-win64-v2.13.2.7-4e1e6e83f.zip">Windows (x64)</a></li>
-        <li><a href="./files/blackcoin-more-linux64-v2.13.2.7-4e1e6e83f.tar.gz">Linux (x64)</a></li>
-        <li><a href="./files/blackcoin-more-armv7-v2.13.2.7-4e1e6e83f.tar.gz">ARMv7</a></li>
-        <li><a href="./files/blackcoin-more-aarch64-v2.13.2.7-4e1e6e83f.tar.gz">ARMv8 (AArch64)</a></li>
-        <li><a href="./files/blackcoin-more-macos-v2.13.2.7-4e1e6e83f.tar.gz">MacOS </a></li>
-        <li><a href="./files/blackcoin-more-macos-v2.13.2.7-4ef44927a.dmg">MacOS (Disk image)</a></li>
-      </ul>
-      <h2>How to upgrade?</h2>
-      <h3>If you are running Blackcoin Legacy wallet v1.2.x:</h3>
-      <p>You need to download the blockchain and send your funds to the new
-        wallet.</p>
-      <h3>If you are running Blackcoin Lore wallet v2.12.x:</h3>
-      <p>Technically you can point Blackcoin More installation to your data
-        folder, but it is recommended to create a new installation in the
-        default data folder. The same for your funds, it is technically possible
-        to use the same wallet.dat file, but it is better to use the wallet
-        created by new installation. Send your funds to this new wallet.</p>
-      <h3>If you are running Blackcoin More wallet v2.13.x:</h3>
-      <p>You can upgrade just by replacing binaries, but <b>backup your wallet</b>
-        first (wallet.dat)</p>
-      <h3>Additional info on Blackcoin More v2.13.2.5 and higher:</h3>
-      <p>The Berkeley DB component was upgraded, please read <a href="https://blackcoin.nl/blackcoin-more-client-v2-13-2-5/">this</a> article.</p>
-      <h3>Additional info on Blackcoin More v2.13.2.7 and higher:</h3>
-      <p>This release is the first release that mitigates dust attacks, please read <a href="https://blackcoin.nl/a-dust-attack-affected-legacy-blackcoin-clients-in-late-sept-2020/">this</a> article.</p>
-      <h2>Blackcoin protocol resources</h2>
-      <ul>
-        <li><a href="https://gitlab.com/blackcoin/">GitLab (official client
-            repos)</a></li>
-        <li><a href="https://github.com/CoinBlack/">GitHub (webpages and
-            binaries)</a></li>
-        <li><a href="https://blackcoin.org/">Protocol-focused website</a></li>
-      </ul>
-      <h2>Blackcoin community resources</h2>
-      <ul>
-        <li><a href="https://blackcoin.nl/">Development/community website</a></li>
-        <li><a href="https://twitter.com/BlackcoinNL">Development/community
-            Twitter</a></li>
-        <li><a href="https://t.me/blackcoinnl">Development/community Telegram</a></li>
-        <li><a href="https://bitcointalk.org/index.php?topic=3017838.new#new">Bitcointalk</a></li>
-        <li><a href="https://discord.gg/hjNUgWD">Discord</a></li>
-        <li><a href="https://keybase.io/team/blackcoin">Keybase</a></li>
-        <li><a href="http://www.reddit.com/r/blackcoin">Reddit</a></li>
-        <li><a href="https://gitter.im/BlackCoin_Hub/">Gitter</a></li>
-        <li><a href="https://twitter.com/BlackcoinOrg">Twitter</a></li>
-        <li><a href="https://t.me/blackcoin">Telegram</a></li>
-        <li><a href="https://webchat.freenode.net/#blackcoin">IRC Bridge</a></li>
-        <li><a href="https://facebook.com/blackcoinorg">Facebook</a></li>
-      </ul>
+    <div>
+        <div class="col-md-12 text-center">
+            <a class="btn btn-light" href="./download.htm" role="button">Download wallet ➔
+            </a>
+        </div>
     </div>
-    <div id="footer">
-      <p>Copyright © 2018-2020 The Blackcoin More developers</p>
-      <p>BLK: BDFgwjx8q9xrpeNzyY1Hz8x36Dmg39C4BU</p>
-    </div>
-  </body>
+
+    <footer class="mt-auto text-muted">
+        <div>Copyright © 2018-2021 The Blackcoin More developers</div>
+        <div>BLK: BDFgwjx8q9xrpeNzyY1Hz8x36Dmg39C4BU</div>
+    </footer>
+</div>
+</body>
 </html>
