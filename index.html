@@ -31,8 +31,8 @@
     <link href="./assets/css/nucleo-icons.css" rel="stylesheet"/>
     <!-- CSS Files -->
     <link href="./assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet"/>
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="./assets/demo/demo.css" rel="stylesheet"/>
+    <!-- CSS Blackcoin -->
+    <link href="./assets/css/blackcoin.css" rel="stylesheet"/>
 </head>
 
 <body class="landing-page">
@@ -185,63 +185,60 @@
         <div class="container">
             <div class="section  content-center" id="#faq" data-background-color="black">
                 <img src="assets/img/path2.png" class="path">
-                <div class="container">
-                    <p>
-                        <a class="btn btn-link" data-toggle="collapse" href="#collapse1" role="button"
-                           aria-expanded="false" aria-controls="collapse1">
-                            <span style="font-size:large;">How to upgrade from older Blackcoin wallets?</span>
-                        </a>
-                    </p>
-                    <div class="collapse" id="collapse1">
-                        <div class="card card-body">
-                            <div class="card-title card-header">From the Blackcoin original wallet v1.2.x.</div>
-                            <p>As the original wallet isn't able to synchronize with the blockchain, sending funds
-                                from the original wallet to your new More wallet isn't an option anymore.
-                                Follow this <a
-                                        href="https://blackcoin.nl/dump-and-import-wallet-private-keys/">
-                                    <span style="font-weight:bolder;">link</span></a> for instructions on how to dump
-                                and import
-                                the wallet.</p>
-                            <div class="card-title card-header">From the Blackcoin Lore wallet v2.12.x</div>
-                            <p>Technically you can point Blackcoin More installation to your data
-                                folder, but it is recommended to create a new installation in the
-                                default data folder. The same for your funds, it is technically possible
-                                to use the same wallet.dat file, but it is better to use the wallet
-                                created by new installation. Send your funds to this new wallet.</p>
-                            <div class="card-title card-header">From the Blackcoin More wallet v2.13.x</div>
-                            <p>You can upgrade just by replacing binaries, but <b>backup your wallet</b>
-                                first (wallet.dat)</p>
-                        </div>
+
+                <p>
+                    <a class="btn btn-link" data-toggle="collapse" href="#collapse1" role="button"
+                       aria-expanded="false" aria-controls="collapse1">
+                        <span class="faq">How to upgrade from older Blackcoin wallets?</span>
+                    </a>
+                </p>
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                        <div class="card-title card-header">From the Blackcoin original wallet v1.2.x.</div>
+                        <p>As the original wallet isn't able to synchronize with the blockchain, sending funds
+                            from the original wallet to your new More wallet isn't an option anymore.
+                            Follow this <a
+                                    href="https://blackcoin.nl/dump-and-import-wallet-private-keys/">
+                                link</a> for instructions on how to dump
+                            and import
+                            the wallet.</p>
+                        <div class="card-title card-header">From the Blackcoin Lore wallet v2.12.x</div>
+                        <p>Technically you can point Blackcoin More installation to your data
+                            folder, but it is recommended to create a new installation in the
+                            default data folder. The same for your funds, it is technically possible
+                            to use the same wallet.dat file, but it is better to use the wallet
+                            created by new installation. Send your funds to this new wallet.</p>
+                        <div class="card-title card-header">From the Blackcoin More wallet v2.13.x</div>
+                        <p>You can upgrade just by replacing binaries, but <b>backup your wallet</b>
+                            first (wallet.dat)</p>
                     </div>
-                    <p>
-                        <a class="btn btn-link" data-toggle="collapse" href="#collapse2" role="button"
-                           aria-expanded="false" aria-controls="collapse2">
-                            <span style="font-size:large;">My balance is incorrectly displayed, what should I do?</span>
-                        </a>
-                    </p>
-                    <div class="collapse" id="collapse2">
-                        <div class="card card-body">
-                            <p>No worries, in Blackcoin More v2.13.2.5 we fixed this. But as the
-                                Berkeley DB component was upgraded, please follow <a
-                                        href="https://blackcoin.nl/blackcoin-more-client-v2-13-2-5/"><span
-                                        style="font-weight:bolder;">this link</span></a>
-                                and follow the steps to correct it again.
-                            </p>
-                        </div>
+                </div>
+                <p>
+                    <a class="btn btn-link" data-toggle="collapse" href="#collapse2" role="button"
+                       aria-expanded="false" aria-controls="collapse2">
+                        <span class="faq">My balance is incorrectly displayed, what should I do?</span>
+                    </a>
+                </p>
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                        <p>No worries, in Blackcoin More v2.13.2.5 we fixed this. But as the
+                            Berkeley DB component was upgraded, please follow <a
+                                    href="https://blackcoin.nl/blackcoin-more-client-v2-13-2-5/">this link</a>
+                            and follow the steps to correct it again.
+                        </p>
                     </div>
-                    <p>
-                        <a class="btn btn-link" data-toggle="collapse" href="#collapse3" role="button"
-                           aria-expanded="false" aria-controls="collapse3">
-                            <span style="font-size:large;">I have another question, where do I find support?</span>
-                        </a>
-                    </p>
-                    <div class="collapse" id="collapse3">
-                        <div class="card card-body">
-                            <p>We love to answer all your questions or just hang out with you in our <a
-                                    href="https://blackcoin.org/#community"><span
-                                    style="font-weight:bolder;"> community </span>.</a>
-                                See you soon?</p>
-                        </div>
+                </div>
+                <p>
+                    <a class="btn btn-link" data-toggle="collapse" href="#collapse3" role="button"
+                       aria-expanded="false" aria-controls="collapse3">
+                        <span class="faq">I have another question, where do I find support?</span>
+                    </a>
+                </p>
+                <div class="collapse" id="collapse3">
+                    <div class="card card-body">
+                        <p>We love to answer all your questions or just hang out with you in our <a
+                                href="https://blackcoin.org/#community"> community.</a>
+                            See you soon?</p>
                     </div>
                 </div>
             </div>
@@ -255,11 +252,11 @@
             <div class="container">
                 <h2>Blackcoin protocol resources</h2>
 
-                    <a class="btn btn-link" href="https://gitlab.com/blackcoin/">GitLab (official client
-                        repos)</a>
-                    <a class="btn btn-link" href="https://github.com/CoinBlack/">GitHub (webpages and
-                        binaries)</a>
-                    <a class="btn btn-link" href="https://blackcoin.org/">Protocol-focused website</a>
+                <a class="btn btn-link" href="https://gitlab.com/blackcoin/">GitLab (official client
+                    repos)</a>
+                <a class="btn btn-link" href="https://github.com/CoinBlack/">GitHub (webpages and
+                    binaries)</a>
+                <a class="btn btn-link" href="https://blackcoin.org/">Protocol-focused website</a>
 
                 <h2>Blackcoin community resources</h2>
                 <ul>
@@ -268,7 +265,8 @@
                         Twitter</a>
                     <a class="btn btn-link" href="https://t.me/blackcoinnl">Development/community Telegram</a>
 
-                    <a class="btn btn-link" href="https://bitcointalk.org/index.php?topic=3017838.new#new">Bitcointalk</a>
+                    <a class="btn btn-link"
+                       href="https://bitcointalk.org/index.php?topic=3017838.new#new">Bitcointalk</a>
 
                     <a class="btn btn-link" href="https://discord.gg/hjNUgWD">Discord</a>
                     <a class="btn btn-link" href="https://keybase.io/team/blackcoin">Keybase</a>
