@@ -13475,7 +13475,7 @@ hr {
 .shapes {
   position: absolute;
   opacity: 0.02;
-  z-index: 2; }
+  z-index: -1; }
 
 .main {
   position: relative;
