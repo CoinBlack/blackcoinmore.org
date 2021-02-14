@@ -1,5 +1,7 @@
 # The Blackcoin More Website
-Hosted on https://blackcoinmore.org built upon [Blk• Design  System] Template
+Hosted on https://blackcoinmore.org built upon [Blk• Design  System] Template.
+As it is built on github, `package.json` is renamed to `package.json.original` as it is only used during development
+for template changes. This way we avoid triggering unnecessary builds.
 
 # [Blk• Design  System](http://demos.creative-tim.com/blk-design-system/index.html) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
