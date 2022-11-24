@@ -6,3 +6,21 @@
 .card a {
     font-weight:bolder;
 }
+
+.support-blackcoin p {
+    line-height: 1.5em;
+}
+
+.support-blackcoin img {
+    height: 200px !important;
+    margin: -0.5em auto 1em;
+}
+
+.support-blackcoin span.address {
+    cursor: pointer;
+    color: #bbb;
+}
+
+.support-blackcoin span.address:hover {
+    color: #999;
+}
