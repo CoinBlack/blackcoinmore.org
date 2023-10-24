@@ -271,17 +271,33 @@
                 <img src="assets/img/path2.png" class="path">
                 <img src="./assets/img/patrat.png" class="shapes squares">
                 <h2>Donate</h2>
-                <div>
+                <div class="container">
                     <div class="card card-body support-blackcoin">
-                        <p>If you would like to donate to the Blackcoin Team to support the project, please send your donations to the addresses below.<br><br></p>
-                        <p>BLK: <span class="address" id="show-blk">BKDvboD1CzZ5KycP1FRSXRoi7XXhHoQhS1</span><br>
-                        <span id="qrcode-blk" style="display: none;"><br><img src="assets/img/qr-codes/blk.png"></span></p>
-                        <p>BTC: <span class="address" id="show-btc">bc1q3d39ungxf64rmxsdyqlp6vr8ypy2kmfegqeq8a</span><br>
-                        <span id="qrcode-btc" style="display: none;"><br><img src="assets/img/qr-codes/btc.png"></span></p>
-                        <p>ETH: <span class="address" id="show-eth">0x8D304B05c9a06A6936Ee4C3F0BEdb726fE2C4c4a</span><br>
-                        <span id="qrcode-eth" style="display: none;"><br><img src="assets/img/qr-codes/eth.png"></span></p>
-                        <p>LTC: <span class="address" id="show-ltc">ltc1qk75mufpdzaqqtgdwgah6ze7pycdna9nvcdp0pn</span><br>
-                        <span id="qrcode-ltc" style="display: none;"><br><img src="assets/img/qr-codes/ltc.png"></span></p>
+                        <div class="mb-3">If you would like to donate to the Blackcoin Team to support the project, please send your donations to the addresses below.</div>
+                        <div class="p-1" data-toggle="collapse" href="#collapse-blk" aria-expanded="false" aria-controls="collapse-blk">
+                            BLK: <span class="address">BKDvboD1CzZ5KycP1FRSXRoi7XXhHoQhS1</span>
+                        </div>
+                        <div class="collapse pt-3" id="collapse-blk">
+                            <img src="assets/img/qr-codes/blk.png">
+                        </div>
+                        <div class="p-1" data-toggle="collapse" href="#collapse-btc" aria-expanded="false" aria-controls="collapse-btc">
+                            BTC: <span class="address">bc1q3d39ungxf64rmxsdyqlp6vr8ypy2kmfegqeq8a</span>
+                        </div>
+                        <div class="collapse pt-3" id="collapse-btc">
+                            <img src="assets/img/qr-codes/btc.png">
+                        </div>
+                        <div class="p-1" data-toggle="collapse" href="#collapse-eth" aria-expanded="false" aria-controls="collapse-eth">
+                            ETH: <span class="address">0x8D304B05c9a06A6936Ee4C3F0BEdb726fE2C4c4a</span>
+                        </div>
+                        <div class="collapse pt-3" id="collapse-eth">
+                            <img src="assets/img/qr-codes/eth.png">
+                        </div>
+                        <div class="p-1" data-toggle="collapse" href="#collapse-ltc" aria-expanded="false" aria-controls="collapse-ltc">
+                            LTC: <span class="address">ltc1qk75mufpdzaqqtgdwgah6ze7pycdna9nvcdp0pn</span>
+                        </div>
+                        <div class="collapse pt-3" id="collapse-ltc">
+                            <img src="assets/img/qr-codes/ltc.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -375,23 +391,6 @@
             }, 1000);
         }
     }
-
-/*
-    $(document).ready(function(){
-        $('#show-blk').click(function() {
-          $('#qrcode-blk').toggle("slide");
-        });
-        $('#show-btc').click(function() {
-          $('#qrcode-btc').toggle("slide");
-        });
-        $('#show-eth').click(function() {
-          $('#qrcode-eth').toggle("slide");
-        });
-        $('#show-ltc').click(function() {
-          $('#qrcode-ltc').toggle("slide");
-        });
-    });
-*/
 </script>
 </body>
 
