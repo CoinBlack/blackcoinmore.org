@@ -24,3 +24,7 @@
 .support-blackcoin span.address:hover {
     color: #999;
 }
+
+.page-header {
+    max-height: max-content !important;
+}
