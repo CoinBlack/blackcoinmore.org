@@ -28,3 +28,9 @@
 .page-header {
     max-height: max-content !important;
 }
+
+@media (max-height: 799px) {
+    .top-block {
+        min-height: 130vh !important;
+    }
+}
